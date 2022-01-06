@@ -15,8 +15,11 @@
 		7CF248E6278626A0006571ED /* Wip_AssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF248E5278626A0006571ED /* Wip_AssignmentUITests.swift */; };
 		7CF249042786BDB0006571ED /* WipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF249032786BDB0006571ED /* WipViewController.swift */; };
 		7CF2490A2786C5E2006571ED /* WipModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF249092786C5E2006571ED /* WipModel.swift */; };
-		7CF2490F2786CA0B006571ED /* WipTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF2490E2786CA0B006571ED /* WipTableViewCell.swift */; };
 		7CF249142786CB13006571ED /* WipViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF249132786CB13006571ED /* WipViewModel.swift */; };
+		7CF249252787121E006571ED /* WipViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF249242787121E006571ED /* WipViewControllerTests.swift */; };
+		7CF2492B278712A6006571ED /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF2492A278712A6006571ED /* NetworkManager.swift */; };
+		7CF249362787135C006571ED /* WipTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF2490E2786CA0B006571ED /* WipTableViewCell.swift */; };
+		7CF2493E278713F8006571ED /* StringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF2493D278713F8006571ED /* StringConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		7CF249092786C5E2006571ED /* WipModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WipModel.swift; sourceTree = "<group>"; };
 		7CF2490E2786CA0B006571ED /* WipTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WipTableViewCell.swift; sourceTree = "<group>"; };
 		7CF249132786CB13006571ED /* WipViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WipViewModel.swift; sourceTree = "<group>"; };
+		7CF249242787121E006571ED /* WipViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WipViewControllerTests.swift; sourceTree = "<group>"; };
+		7CF2492A278712A6006571ED /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		7CF2493D278713F8006571ED /* StringConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,7 @@
 		7CF248C22786269D006571ED /* Wip_Assignment */ = {
 			isa = PBXGroup;
 			children = (
+				7CF2492927871288006571ED /* Network */,
 				7CF248FC2786B8F3006571ED /* AppResources */,
 				7CF248FB2786B8E1006571ED /* ViewModel */,
 				7CF248FA2786B8D9006571ED /* View */,
@@ -121,6 +128,7 @@
 			children = (
 				7CF248DA278626A0006571ED /* Wip_AssignmentTests.swift */,
 				7CF248DC278626A0006571ED /* Info.plist */,
+				7CF249242787121E006571ED /* WipViewControllerTests.swift */,
 			);
 			path = Wip_AssignmentTests;
 			sourceTree = "<group>";
@@ -145,8 +153,8 @@
 		7CF248FA2786B8D9006571ED /* View */ = {
 			isa = PBXGroup;
 			children = (
-				7CF249032786BDB0006571ED /* WipViewController.swift */,
 				7CF2490E2786CA0B006571ED /* WipTableViewCell.swift */,
+				7CF249032786BDB0006571ED /* WipViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -162,8 +170,17 @@
 		7CF248FC2786B8F3006571ED /* AppResources */ = {
 			isa = PBXGroup;
 			children = (
+				7CF2493D278713F8006571ED /* StringConstants.swift */,
 			);
 			path = AppResources;
+			sourceTree = "<group>";
+		};
+		7CF2492927871288006571ED /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7CF2492A278712A6006571ED /* NetworkManager.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,7 +314,9 @@
 			files = (
 				7CF248C42786269D006571ED /* AppDelegate.swift in Sources */,
 				7CF249142786CB13006571ED /* WipViewModel.swift in Sources */,
-				7CF2490F2786CA0B006571ED /* WipTableViewCell.swift in Sources */,
+				7CF2492B278712A6006571ED /* NetworkManager.swift in Sources */,
+				7CF249362787135C006571ED /* WipTableViewCell.swift in Sources */,
+				7CF2493E278713F8006571ED /* StringConstants.swift in Sources */,
 				7CF249042786BDB0006571ED /* WipViewController.swift in Sources */,
 				7CF2490A2786C5E2006571ED /* WipModel.swift in Sources */,
 				7CF248C62786269D006571ED /* SceneDelegate.swift in Sources */,
@@ -309,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CF248DB278626A0006571ED /* Wip_AssignmentTests.swift in Sources */,
+				7CF249252787121E006571ED /* WipViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

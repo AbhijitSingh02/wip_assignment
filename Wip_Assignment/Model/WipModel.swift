@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ContactModal: Codable {
+struct WipModel: Codable {
     let title: String?
     let rows: [Row]?
 

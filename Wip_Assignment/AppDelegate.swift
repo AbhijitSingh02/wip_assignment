@@ -16,19 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-//        window = UIWindow(frame:UIScreen.main.bounds)
-//        //        window?.rootViewController = ContactsViewController()
-//        window?.rootViewController = UINavigationController(rootViewController: WipViewController())
-//
-//        window?.makeKeyAndVisible()
-        
         return true
     }
-
-//    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-//        // Override point for customization after application launch.
-//        return true
-//    }
 
     // MARK: UISceneSession Lifecycle
 
