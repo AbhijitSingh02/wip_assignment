@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		7CF248C42786269D006571ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF248C32786269D006571ED /* AppDelegate.swift */; };
 		7CF248C62786269D006571ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF248C52786269D006571ED /* SceneDelegate.swift */; };
-		7CF248C82786269D006571ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF248C72786269D006571ED /* ViewController.swift */; };
-		7CF248CB2786269D006571ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CF248C92786269D006571ED /* Main.storyboard */; };
 		7CF248CD278626A0006571ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CF248CC278626A0006571ED /* Assets.xcassets */; };
 		7CF248D0278626A0006571ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CF248CE278626A0006571ED /* LaunchScreen.storyboard */; };
 		7CF248DB278626A0006571ED /* Wip_AssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF248DA278626A0006571ED /* Wip_AssignmentTests.swift */; };
 		7CF248E6278626A0006571ED /* Wip_AssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF248E5278626A0006571ED /* Wip_AssignmentUITests.swift */; };
+		7CF249042786BDB0006571ED /* WipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF249032786BDB0006571ED /* WipViewController.swift */; };
+		7CF2490A2786C5E2006571ED /* WipModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF249092786C5E2006571ED /* WipModel.swift */; };
+		7CF2490F2786CA0B006571ED /* WipTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF2490E2786CA0B006571ED /* WipTableViewCell.swift */; };
+		7CF249142786CB13006571ED /* WipViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF249132786CB13006571ED /* WipViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +40,6 @@
 		7CF248C02786269D006571ED /* Wip_Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wip_Assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CF248C32786269D006571ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CF248C52786269D006571ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7CF248C72786269D006571ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7CF248CA2786269D006571ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7CF248CC278626A0006571ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CF248CF278626A0006571ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CF248D1278626A0006571ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +49,10 @@
 		7CF248E1278626A0006571ED /* Wip_AssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Wip_AssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CF248E5278626A0006571ED /* Wip_AssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wip_AssignmentUITests.swift; sourceTree = "<group>"; };
 		7CF248E7278626A0006571ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CF249032786BDB0006571ED /* WipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WipViewController.swift; sourceTree = "<group>"; };
+		7CF249092786C5E2006571ED /* WipModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WipModel.swift; sourceTree = "<group>"; };
+		7CF2490E2786CA0B006571ED /* WipTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WipTableViewCell.swift; sourceTree = "<group>"; };
+		7CF249132786CB13006571ED /* WipViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WipViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +103,12 @@
 		7CF248C22786269D006571ED /* Wip_Assignment */ = {
 			isa = PBXGroup;
 			children = (
+				7CF248FC2786B8F3006571ED /* AppResources */,
+				7CF248FB2786B8E1006571ED /* ViewModel */,
+				7CF248FA2786B8D9006571ED /* View */,
+				7CF248F92786B8D1006571ED /* Model */,
 				7CF248C32786269D006571ED /* AppDelegate.swift */,
 				7CF248C52786269D006571ED /* SceneDelegate.swift */,
-				7CF248C72786269D006571ED /* ViewController.swift */,
-				7CF248C92786269D006571ED /* Main.storyboard */,
 				7CF248CC278626A0006571ED /* Assets.xcassets */,
 				7CF248CE278626A0006571ED /* LaunchScreen.storyboard */,
 				7CF248D1278626A0006571ED /* Info.plist */,
@@ -126,6 +132,38 @@
 				7CF248E7278626A0006571ED /* Info.plist */,
 			);
 			path = Wip_AssignmentUITests;
+			sourceTree = "<group>";
+		};
+		7CF248F92786B8D1006571ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7CF249092786C5E2006571ED /* WipModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7CF248FA2786B8D9006571ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7CF249032786BDB0006571ED /* WipViewController.swift */,
+				7CF2490E2786CA0B006571ED /* WipTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7CF248FB2786B8E1006571ED /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7CF249132786CB13006571ED /* WipViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7CF248FC2786B8F3006571ED /* AppResources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AppResources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +271,6 @@
 			files = (
 				7CF248D0278626A0006571ED /* LaunchScreen.storyboard in Resources */,
 				7CF248CD278626A0006571ED /* Assets.xcassets in Resources */,
-				7CF248CB2786269D006571ED /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +295,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CF248C82786269D006571ED /* ViewController.swift in Sources */,
 				7CF248C42786269D006571ED /* AppDelegate.swift in Sources */,
+				7CF249142786CB13006571ED /* WipViewModel.swift in Sources */,
+				7CF2490F2786CA0B006571ED /* WipTableViewCell.swift in Sources */,
+				7CF249042786BDB0006571ED /* WipViewController.swift in Sources */,
+				7CF2490A2786C5E2006571ED /* WipModel.swift in Sources */,
 				7CF248C62786269D006571ED /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,14 +336,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7CF248C92786269D006571ED /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7CF248CA2786269D006571ED /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7CF248CE278626A0006571ED /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
