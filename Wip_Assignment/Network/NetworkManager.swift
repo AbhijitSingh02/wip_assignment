@@ -24,9 +24,12 @@ class WipNetworkManager {
                         }
                     }
                 } else {
+                    completion(nil, "Data not Found")
                     print("Data not found")
                 }
             }.resume()
+        } else {
+            completion(nil, "Wrong Url provided")
         }
     
     }
